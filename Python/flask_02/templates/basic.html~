@@ -1,0 +1,19 @@
+<!DOCTYPE: HTML>
+<html>
+  <header>
+    <title>{{ title }}</title>
+  </header>
+  <body>
+    <h1>{{ heading }}</h1>
+    <br>
+    {%- for item in varL %} 
+    {%- if links %}
+    <a href={{ item }}>{{ item }}</a>
+    {%- else %}
+    {{ item }}
+    {%- endif %}
+    <br>
+    {%- endfor %}
+    <br>
+  </body>
+</html>
