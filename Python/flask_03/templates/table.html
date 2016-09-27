@@ -1,0 +1,18 @@
+<!DOCTYPE: HTML>
+<html>
+  <header>
+    <title>{{ title }}</title>
+  </header>
+  <body>
+    <h1>{{ heading }}</h1>
+    <br>
+    <table>
+    {%- for key, value in varD.iteritems() %}
+    <tr><td>{{ key }}</td><td>{{ value }}</td></tr>
+    {%- endfor %}
+    </table>
+    <br>
+    Random Occupation: {{ randOcc }}
+    <br>
+  </body>
+</html>

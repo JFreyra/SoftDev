@@ -1,0 +1,16 @@
+import csv
+
+#removes only one entry whose key does not have an a castable float value
+#must optimize for multiple removals
+#good for removing headers in csv file
+def occDict():
+    with open("occupations.csv", mode="r") as infile:
+        reader = csv.reader(infile)
+        mydict = dict((rows[0],rows[1]) for rows in reader)
+    for key in mydict:
+        try:
+            float(mydict[key])
+        except ValueError:
+            mydict.pop(key, mydict[key])
+            break
+    return mydict
