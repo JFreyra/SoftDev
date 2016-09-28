@@ -1,0 +1,55 @@
+<!DOCTYPE: html>
+<html>
+  <body>
+    <center>
+      <h1>Create Account</h1>
+      <form method=\"GET\" action=\"LoginLab.py\">
+        <table>
+          <tr>
+	    <td style="text-align:right">
+              Input Username
+            </td>
+	    <td>
+              <input type=\"text\" name=\"usr\" size=\"20\" value=\"\">
+	    </td>
+	    <br>
+	  </tr>
+	  <tr>
+	    <td style="text-align:right">
+	      Input Password
+	    </td>
+	    <td>
+	      <input type=\"password\" name=\"pass\" size=\"20\" value=\"\"><br>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td style="text-align:right">
+	      Confirm Password
+	    </td>
+	    <td>
+	      <input type=\"password\" name=\"confpass\" size=\"20\" value=\"\"><br>
+	    </td>
+	</tr></table>
+	<input type=\"submit\" name=\"Submit\" value=\"Create\">
+      </form>
+      <h1>Login to Account</h1>
+      <form method=\"GET\" action=\"LoginLab.py\">
+	<table>
+	  <tr><td style="text-align:right">
+              Input Username
+	    </td>
+	    <td>
+              <input type=\"text\" name=\"logusr\" size=\"20\" value=\"\"><br>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td style="text-align:right">
+	      Input Password
+	    </td>
+	    <td>
+	      <input type=\"password\" name=\"logpass\" size=\"20\" value=\"\"><br>
+	    </td>
+	</tr></table>
+	<input type=\"submit\" name=\"Submit\" value=\"Login\">
+      </form>
+</body></center></html>
