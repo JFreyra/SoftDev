@@ -1,6 +1,13 @@
 from flask import Flask, render_template, request
+import hashlib,csv
 
 app = Flask(__name__)
+
+def dictfy(csvFile):
+    with open(csvFile, mode="r") as infile:
+        reader = csv.reader(infile)
+        mydict = dict((rows[0],rows[1]) for rows in reader)
+    return mydict
 
 @app.route("/")
 def login():
@@ -13,17 +20,15 @@ def authenticate():
     print app
     print "\n:: DIAG:: print request"
     print request
-    print "\n:: DIAG:: print args - from GET"
-    print request.args
     print "\n:: DIAG:: print form - from POST"
     print request.form
-    print "\n:: DIAG:: print headers"
-    print request.headers
     if(request.form): # empty dictionaries evaluate to False
-        print "\n\n\n :::: DIAG :::: checks for request form \n\n\n"
         if(request.form['username'] == "JFreyra"): # username is only possible POST key
             return render_template("validated.html")
     return render_template("invalidated.html")
+
+def checker(userStr,passStr):
+    return 0
 
 if(__name__ == "__main__"):
     app.debug = True
