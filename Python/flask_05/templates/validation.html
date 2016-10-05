@@ -1,0 +1,18 @@
+<!DOCTYPE: HTML>
+<html>
+{%- if validated %}
+<header><title>Validated</title></header>
+<body>
+  <h1>Good job: you have been validated</h1>
+  <br>
+  <a href="/">Go back</a>
+</body>
+{%- else %}
+<header><title>Invalidated</title></header>
+<body>
+  <h1>You had one job: you have been invalidated</h1>
+  <br>
+  <a href="/">Go back</a>
+</body>
+{%- endif %}
+</html>
