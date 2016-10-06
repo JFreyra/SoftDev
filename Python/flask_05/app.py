@@ -83,7 +83,7 @@ def signup():
     if(user != '' and passW != ''):
         tempDict = dictify("data/userpass.csv")
         if(tempDict.has_key(user)):
-            return redirect(url_for(addAcc, message = "Sign Up Failed! Username already taken"))
+            return redirect(url_for("addAcc", message = "Sign Up Failed! Username already taken"))
         writeTo("data/userpass.csv",user,passW)
         return render_template("basic.html",
                                message = "Sign Up Complete! Please Login")
