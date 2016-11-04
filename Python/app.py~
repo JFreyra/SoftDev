@@ -1,5 +1,0 @@
-def hello_world():
-
-    return "No hablo queso"
-
-hello_world()
