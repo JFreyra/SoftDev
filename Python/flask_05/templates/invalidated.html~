@@ -1,9 +1,0 @@
-<!DOCTYPE: HTML>
-<html>
-<header><title>Invalidated</title></header>
-<body>
-  <h1>You had one job: you have been invalidated</h1>
-  <br>
-  <a href="127.0.0.1:5000/">Go back</a>
-</body>
-</html>
